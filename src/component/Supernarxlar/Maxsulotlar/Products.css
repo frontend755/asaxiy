@@ -1,0 +1,69 @@
+.products-wrapper {
+  font-family: Arial, sans-serif;
+  padding-bottom: 60px;
+  margin-top: 70px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.products-container {
+  display: grid;
+  max-width: 1200px;
+  margin: 40px auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 0 20px;
+}
+
+/* ✅ Cardning balandligi bir xil bo‘lishi uchun */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+/* pastdagi buttonni pastda ushlab turadi */
+  transition: transform 0.3s ease;
+  height: 380px; /* Har bir card bir xil bo‘lishi uchun */
+}
+.product-card  button {
+  margin-top: auto; /* Buttonni pastga surish */
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ✅ Rasm o‘lchamini tekislash */
+.product-card img {
+  width: 100%;
+  height: 180px; /* hamma rasm bir xil balandlikda */
+  object-fit: contain; /* rasmni siqmasdan moslashtiradi */
+  margin-bottom: 15px;
+}
+
+/* ✅ Mahsulot nomi */
+.product-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  /* margin-bottom: 5px; */
+}
+
+/* ✅ Narx */
+.product-card p {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* ✅ Button */
+
