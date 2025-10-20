@@ -1,0 +1,90 @@
+.sahifalash-quti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  gap: 25px;
+  animation: fadeIn 0.5s ease;
+}
+.sahifa-raqamlari {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.raqam-btn,
+.arrow-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+}
+
+.raqam-btn:hover,
+.arrow-btn:hover {
+  background: linear-gradient(135deg, #0057ff, #00bfff);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.raqam-btn.faol {
+  background: linear-gradient(135deg, #007bff, #0057ff);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 3px 10px rgba(0, 87, 255, 0.4);
+}
+
+.arrow-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.koproq-quti {
+  margin-top: 5px;
+  animation: fadeInUp 0.5s ease;
+}
+
+.koproq-btn {
+  background: linear-gradient(135deg, #0057ff, #00bfff);
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.koproq-btn:hover {
+  background: linear-gradient(135deg, #0040cc, #008cff);
+  transform: scale(1.05);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 600px) {
+  .raqam-btn, .arrow-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .koproq-btn {
+    font-size: 13px;
+    padding: 10px 24px;
+  }
+}

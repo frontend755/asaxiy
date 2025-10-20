@@ -36,3 +36,202 @@
     transform: rotate(360deg);
   }
 }
+
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  background:white;
+  padding: 40px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: #1a5491;
+}
+
+.delivery-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f1f5f9;  
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delivery-box:hover {
+  background: #e2e8f0;
+}
+.p1{
+  margin-left: -100px;
+  
+}
+
+
+
+
+
+
+
+.footer1 {
+  background-color: #ffffff;
+  padding: 60px 80px;
+  border-top: 1px solid #e5e7eb;
+  font-family: "Inter", sans-serif;
+  color: #1f2937;
+}
+
+/* Yuqori qism — to'lov turlari va ijtimoiy tarmoqlar */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+     .charosiy{
+      display: flex;
+      gap: 70px;
+     }
+
+/* Chap bo'lim — to‘lov turlari */
+.payment-section h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.payment-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.payment-card {
+  background-color: #f6f7fb;
+  padding: 15px 30px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-img{
+  width: 60px;
+  height: 50px;
+}
+.payment-img3{
+  height: 60px;
+  width: 77px;
+}
+.payment-img2{
+  width: 77px;
+  height: 50px;
+}
+.payment-img1{
+  width: 77px;
+  height: 35px;
+}
+.payment-card:hover {
+  background-color: #eef2ff;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* O'ng bo'lim — ijtimoiy tarmoqlar */
+.social-section h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons svg {
+  font-size: 28px;
+  color: #374151;
+  background-color: #f6f7fb;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons svg:hover {
+  color: #ffffff;
+  background-color: #2563eb;
+  transform: scale(1.15);
+}
+
+/* Pastdagi matn */
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-bottom b {
+  color: #2563eb;
+}
+
+/* 📱 Responsiv (mobil) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 30px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .payment-logos {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

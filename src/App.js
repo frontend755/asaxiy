@@ -21,6 +21,8 @@ import Kiyim from './component/Supernarxlar/Kiyim';
 import Oyinchoqlar from './component/Supernarxlar/Oyinchoqlar';
 import Qurilish from './component/Supernarxlar/Qurilish';
 import Konselyariya from './component/Supernarxlar/Konselyariya';
+import Footer from './component/Footer';
+import Footer2 from './component/Footer2';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -40,7 +42,7 @@ function App() {
         <Route path="/0-0-6" element={<Navbar2 />} />
         {/* boshqa sahifalarni shu yerga qo‘shish mumkin */}
         <Route path="/bosh" element={<Sahifa />} />
-        <Route path="/categories/kitoblar" element={<Kitoblar />} />
+        <Route path="/kitoblar" element={<Kitoblar />} />
         <Route path="/categories/telefonlar-va-gadjetlar" element={<Telefonlar />} />
         <Route path="/categories/maishiy-texnika" element={<Maishiy />} />
         <Route path="/categories/iqlim-texnikasi" element={<Iqlim />} />
@@ -57,6 +59,7 @@ function App() {
         <Route path='/categories/oyinchoqlar-sovgalar-va-aksessuarlar' element={<Oyinchoqlar />} />
         <Route path='/categories/qurilish-va-tamirlash' element={<Qurilish />} />
         <Route path='/categories/konselyariya-tovarlari' element={<Konselyariya />} />
+
 
       </Routes>
       <div>

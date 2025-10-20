@@ -16,7 +16,7 @@ function Navbar() {
           <Link to="/services" className="cursor-pointer hover:text-blue-700">Talabalar uchun yaxshi</Link>
           <Link to="/projects" className="cursor-pointer hover:text-blue-700">Smartfonlar</Link>
           <Link to="/projects" className="cursor-pointer hover:text-blue-700">Maishiy texnika</Link>
-          <Link to="/projects" className="cursor-pointer hover:text-blue-700">Kitoblar</Link>
+          <Link to="/kitoblar" className="cursor-pointer hover:text-blue-700">Kitoblar</Link>
           <Link to="/projects" className="cursor-pointer hover:text-blue-700">Televizorlar</Link>
           <Link to="/projects" className="cursor-pointer hover:text-blue-700">Noutbuklar</Link>
         </div>

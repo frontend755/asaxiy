@@ -1,0 +1,196 @@
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1400px;
+}
+
+
+.main-layout {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+.sidebar {
+  width: 250px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h3 {
+  font-size: 17px;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.book-grid,
+.kitoblar-tarmogi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.kitob-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(0.9); 
+}
+
+.kitob-card:hover {
+  transform: scale(0.95);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+.super-narx-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #1565c0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  z-index: 5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.super-narx-badge:hover {
+  background: #0d47a1;
+  transform: scale(1.05);
+}
+
+
+.icon-group {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.compare-icon {
+  cursor: pointer;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.compare-icon:hover {
+  transform: scale(1.2);
+}
+
+.compare-icon.active {
+  color: #1565c0;
+}
+
+
+.toast {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #1976d2, #0d47a1);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  animation: fadeInOut 2.5s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  15%,
+  85% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.no-books {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-top: 40px;
+}
+@media (max-width: 1200px) {
+  .book-grid,
+  .kitoblar-tarmogi {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .book-grid,
+  .kitoblar-tarmogi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kitob-card {
+    transform: scale(0.95);
+  }
+}
+
+@media (max-width: 600px) {
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-grid,
+  .kitoblar-tarmogi {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
