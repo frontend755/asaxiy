@@ -33,6 +33,7 @@ function App() {
       <div className="w-full flex justify-center">
         <div className="w-full">
           <Navbar />
+         <Sahifa/>
         </div>
       </div>
 
