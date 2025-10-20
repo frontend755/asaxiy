@@ -11,7 +11,7 @@ function Navbar() {
 
         {/* O‘rta menyu */}
         <div className="flex w-full justify-around font-medium text-lg">
-          <Link to="/" className="cursor-pointer hover:text-blue-700">Super narx</Link>
+          <Link to="/nav" className="cursor-pointer hover:text-blue-700">Super narx</Link>
           <Link to="/0-0-6" className="cursor-pointer hover:text-blue-700">0-0-6</Link>
           <Link to="/services" className="cursor-pointer hover:text-blue-700">Talabalar uchun yaxshi</Link>
           <Link to="/projects" className="cursor-pointer hover:text-blue-700">Smartfonlar</Link>

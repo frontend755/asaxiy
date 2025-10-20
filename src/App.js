@@ -33,16 +33,16 @@ function App() {
       <div className="w-full flex justify-center">
         <div className="w-full">
           <Navbar />
-         <Sahifa/>
+        
         </div>
       </div>
 
       {/* Asosiy sahifalar */}
       <Routes>
-        <Route path="/" element={<Navbar1 />} />
+        <Route path="/nav" element={<Navbar1 />} />
         <Route path="/0-0-6" element={<Navbar2 />} />
         {/* boshqa sahifalarni shu yerga qo‘shish mumkin */}
-        <Route path="/bosh" element={<Sahifa />} />
+        {/* <Route path="/bosh" element={<Sahifa />} /> */}
         <Route path="/kitoblar" element={<Kitoblar />} />
         <Route path="/categories/telefonlar-va-gadjetlar" element={<Telefonlar />} />
         <Route path="/categories/maishiy-texnika" element={<Maishiy />} />
@@ -65,6 +65,7 @@ function App() {
       </Routes>
       <div>
         {/* <Maxsulot /> */}
+        <Sahifa/>
       </div>
     </Router>
   );
