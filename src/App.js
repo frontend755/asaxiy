@@ -1,4 +1,5 @@
 import './App.css';
+import Navbaras from './Navbaras';
 import Navbar from './component/Navbar';
 import Navbar1 from './component/Supernarxlar/Navbar';
 import Maxsulot  from './component/Supernarxlar/Maxsulotlar/Maxsulot';
@@ -23,6 +24,8 @@ import Qurilish from './component/Supernarxlar/Qurilish';
 import Konselyariya from './component/Supernarxlar/Konselyariya';
 import Footer from './component/Footer';
 import Footer2 from './component/Footer2';
+import Account from './component/Account';
+import Sevimli from './component/Sevimli';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -32,6 +35,7 @@ function App() {
       {/* Navbar har doim ko‘rinadi */}
       <div className="w-full flex justify-center">
         <div className="w-full">
+           <Navbaras />
           <Navbar />
         
         </div>
@@ -60,11 +64,13 @@ function App() {
         <Route path='/categories/oyinchoqlar-sovgalar-va-aksessuarlar' element={<Oyinchoqlar />} />
         <Route path='/categories/qurilish-va-tamirlash' element={<Qurilish />} />
         <Route path='/categories/konselyariya-tovarlari' element={<Konselyariya />} />
-
+    <Route path="/account" element={<Account />} />
+     <Route path="/sevimli" element={<Sevimli />} />
 
       </Routes>
       <div>
         {/* <Maxsulot /> */}
+
         <Sahifa/>
       </div>
     </Router>
