@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <div className="flex  gap-8 px-10 py-10 max-w-[1400px] mx-auto">
       {/* Chap tarafdagi bo‘limlar paneli */}
-      <div className="w-[320px] flex-shrink-0">
+      <div className="w-[260px] flex-shrink-0">
         {/* Breadcrumb */}
         <div className="text-sm text-gray-500 flex items-center gap-1 mb-3">
           <Link to="/bosh" className="cursor-pointer hover:text-blue-600">
@@ -58,8 +58,8 @@ function Navbar() {
       <div className="flex  gap-10 w-full">
         {/* <Maxsulot4 /> */}
         <Maxsulot />
-        <Maxsulot />
-        <Maxsulot />
+        {/* <Maxsulot />
+        <Maxsulot /> */}
         {/* <Maxsulot /> */}
 
       </div>
